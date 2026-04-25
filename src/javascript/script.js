@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- Mobile hamburger menu ---
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
+    const mobileMenuClose = document.getElementById("mobileMenuClose");
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener("click", () => {
@@ -14,6 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
             mobileMenu.classList.toggle("active");
             document.body.style.overflow = mobileMenu.classList.contains("active") ? "hidden" : "";
         });
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                mobileMenu.classList.remove("active");
+                document.body.style.overflow = "";
+            });
+        }
 
         // Close mobile menu when a link is clicked
         const mobileLinks = mobileMenu.querySelectorAll("a");
