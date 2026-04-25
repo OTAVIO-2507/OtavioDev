@@ -182,23 +182,19 @@ h4 {
     align-items: center;
 }
 
-.image-placeholder {
+.hero-avatar {
     width: 400px;
     height: 400px;
-    background: linear-gradient(135deg, var(--accent-color), #3b0764);
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 8rem;
-    color: rgba(255, 255, 255, 0.2);
-    transform: rotate(3deg);
-    transition: var(--transition);
+    border-radius: 50%;
+    object-fit: cover;
     box-shadow: 0 20px 40px rgba(109, 40, 217, 0.2);
+    transition: var(--transition);
+    border: 4px solid var(--accent-color);
 }
 
-.image-placeholder:hover {
-    transform: rotate(0deg) scale(1.02);
+.hero-avatar:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px rgba(109, 40, 217, 0.4);
 }
 
 /* Sections General */
@@ -1135,7 +1131,7 @@ section {
         padding: 3rem 4%;
     }
 
-    .image-placeholder {
+    .hero-avatar {
         width: 340px;
         height: 340px;
     }
@@ -1185,10 +1181,9 @@ section {
         font-size: clamp(2.5rem, 6vw, 4rem);
     }
 
-    .image-placeholder {
+    .hero-avatar {
         width: 280px;
         height: 280px;
-        font-size: 6rem;
     }
 
     /* About */
@@ -1298,11 +1293,9 @@ section {
         font-size: 1.5rem;
     }
 
-    .image-placeholder {
+    .hero-avatar {
         width: 240px;
         height: 240px;
-        font-size: 5rem;
-        border-radius: 24px;
     }
 
     /* About */
@@ -1468,11 +1461,9 @@ section {
         font-size: 1.3rem;
     }
 
-    .image-placeholder {
+    .hero-avatar {
         width: 200px;
         height: 200px;
-        font-size: 4rem;
-        border-radius: 20px;
     }
 
     /* About */
@@ -1678,11 +1669,9 @@ section {
         font-size: 0.88rem;
     }
 
-    .image-placeholder {
+    .hero-avatar {
         width: 180px;
         height: 180px;
-        font-size: 3.5rem;
-        border-radius: 18px;
     }
 
     .lead {
@@ -1796,10 +1785,9 @@ section {
         font-size: 1.7rem;
     }
 
-    .image-placeholder {
+    .hero-avatar {
         width: 150px;
         height: 150px;
-        font-size: 3rem;
     }
 
     .skill-card {
