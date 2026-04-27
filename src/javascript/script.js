@@ -33,6 +33,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // --- Header Scroll Animation ---
+    const navbar = document.querySelector('.navbar');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        if (!navbar) return;
+        
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > lastScrollY && currentScrollY > 80) {
+            // Scrolling down and past a threshold
+            navbar.classList.add('navbar--hidden');
+        } else {
+            // Scrolling up
+            navbar.classList.remove('navbar--hidden');
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+
     // --- Mobile hamburger menu ---
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");

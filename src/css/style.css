@@ -78,6 +78,11 @@ h4 {
     -webkit-backdrop-filter: blur(12px);
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.navbar--hidden {
+    transform: translateY(-100%);
 }
 
 .logo {
