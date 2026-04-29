@@ -26,7 +26,8 @@ html {
 }
 
 /* Lenis recommended styles */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
     height: auto;
 }
 
@@ -456,29 +457,37 @@ section {
     transform-origin: top center;
 }
 
-/* Espaçamento entre os cards (usa margin-top no próximo card para não encurtar a altura pegajosa do card atual) */
-.project-section+.project-section {
+/* Anchor properties */
+.project-anchor {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    scroll-margin-top: 12vh;
+}
+
+/* Espaçamento entre os cards usando a âncora invisível */
+.project-anchor:not(:first-child) {
     margin-top: 60vh;
 }
 
 /* Explicit stacking order to ensure later cards overlap earlier ones even during GSAP transforms */
-.project-section:nth-child(1) {
+.project-section:nth-of-type(1) {
     z-index: 10;
 }
 
-.project-section:nth-child(2) {
+.project-section:nth-of-type(2) {
     z-index: 20;
 }
 
-.project-section:nth-child(3) {
+.project-section:nth-of-type(3) {
     z-index: 30;
 }
 
-.project-section:nth-child(4) {
+.project-section:nth-of-type(4) {
     z-index: 40;
 }
 
-.project-section:nth-child(5) {
+.project-section:nth-of-type(5) {
     z-index: 50;
 }
 
@@ -784,7 +793,7 @@ section {
         border-radius: 18px;
     }
 
-    .project-section+.project-section {
+    .project-anchor:not(:first-child) {
         margin-top: 4rem;
     }
 
