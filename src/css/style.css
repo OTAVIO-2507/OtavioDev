@@ -1337,9 +1337,28 @@ section {
         height: 4rem;
     }
 
-    /* Timeline */
-    .timeline-img {
+    /* Timeline — no mobile o logo da empresa vira o marcador da timeline */
+    .timeline-dot {
         display: none;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        padding-left: 78px;
+    }
+
+    .timeline-img {
+        display: block;
+        position: absolute;
+        left: 4px;
+        top: 2.3rem;
+        width: 54px;
+        height: 54px;
+        box-shadow: 0 0 0 4px var(--bg-color), 0 6px 16px rgba(0, 0, 0, 0.35);
+        z-index: 1;
     }
 
     /* Contact */
@@ -1669,20 +1688,19 @@ section {
         font-size: 0.75rem;
     }
 
-    /* Timeline */
+    /* Timeline — logo-marcador menor nos celulares */
     .timeline::after {
-        left: 16px;
+        left: 28px;
     }
 
     .timeline-item {
-        padding: 1.5rem 0 1.5rem 42px;
+        padding: 1.5rem 0 1.5rem 70px;
     }
 
-    .timeline-dot {
-        left: 9px;
-        width: 14px;
-        height: 14px;
-        top: 2rem;
+    .timeline-img {
+        width: 48px;
+        height: 48px;
+        top: 1.9rem;
     }
 
     .timeline-content {
@@ -1807,6 +1825,20 @@ section {
     }
 
     /* Timeline */
+    .timeline::after {
+        left: 26px;
+    }
+
+    .timeline-item {
+        padding-left: 64px;
+    }
+
+    .timeline-img {
+        width: 44px;
+        height: 44px;
+        top: 1.8rem;
+    }
+
     .timeline-content h3 {
         font-size: 1.05rem;
     }
