@@ -8,8 +8,6 @@ Primeira versão do meu portfólio pessoal: single page com apresentação, habi
 
 [![Demonstração online](https://img.shields.io/badge/demonstra%C3%A7%C3%A3o-online-2EA44F?style=for-the-badge)](https://otavio-2507.github.io/OtavioDev/)
 
-[![Prévia do portfólio](docs/preview.webp)](https://otavio-2507.github.io/OtavioDev/)
-
 > Este repositório corresponde à primeira versão do portfólio. A versão atual, reconstruída com arquitetura multi-arquivo e efeitos 3D, está em [Portifolio-v2](https://github.com/OTAVIO-2507/Portifolio-v2).
 
 ## Visão geral
