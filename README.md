@@ -8,7 +8,9 @@ Primeira versão do meu portfólio pessoal: single page com apresentação, habi
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-[![Demonstração online](https://img.shields.io/badge/demonstra%C3%A7%C3%A3o-online-2EA44F?style=flat-square)](https://otavio-2507.github.io/OtavioDev/)
+![Prévia do projeto](src/img/preview.jpg)
+
+**[Ver Projeto](https://otavio-2507.github.io/OtavioDev/)**
 
 </div>
 
@@ -26,6 +28,18 @@ O site apresenta minha trajetória como desenvolvedor em uma única página: her
 - Seções de habilidades e experiência profissional
 - Currículo em PDF disponível no repositório
 - Tema escuro com identidade visual própria
+
+## Decisões de projeto
+
+Algumas escolhas que não são óbvias pelo código:
+
+**Os links âncora passam pelo Lenis, não pelo navegador.** Com rolagem suave por biblioteca, o salto nativo de âncora briga com a interpolação e produz um solavanco. Por isso todo `a[href^="#"]` tem o comportamento padrão cancelado e delega para `lenis.scrollTo`: existe um só motor de rolagem na página.
+
+**A barra some ao descer e volta ao subir.** A comparação com `lastScrollY` dá a direção do gesto, e o limiar de 80px evita que ela pisque durante os primeiros pixels. Esconder no sentido da leitura devolve altura de tela justamente quando a pessoa está consumindo conteúdo.
+
+**O menu aberto tranca a rolagem do corpo.** Sem `body.style.overflow = 'hidden'`, a página continua rolando atrás do painel e a pessoa perde a posição ao fechar.
+
+**O menu se fecha sozinho ao passar de 900px.** Redimensionar a janela com o painel aberto deixaria um estado que não existe no desktop — o overlay em uma largura onde o CSS já não o desenha, e a rolagem travada sem nada visível explicando o motivo.
 
 ## Tecnologias
 
