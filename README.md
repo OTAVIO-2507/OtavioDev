@@ -10,7 +10,8 @@ Primeira versão do meu portfólio pessoal: single page com apresentação, habi
 
 ![Prévia do projeto](src/img/preview.jpg)
 
-**[Ver Projeto](https://otavio-2507.github.io/OtavioDev/)**
+[![Ver projeto](https://img.shields.io/badge/Ver_projeto-3642B5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://otavio-2507.github.io/OtavioDev/)
+[![Código](https://img.shields.io/badge/C%C3%B3digo-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OTAVIO-2507/OtavioDev)
 
 </div>
 
