@@ -8,10 +8,12 @@ Primeira versão do meu portfólio pessoal: single page com apresentação, habi
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-![Prévia do projeto](src/img/preview.jpg)
-
 [![Ver projeto](https://img.shields.io/badge/Ver_projeto-3642B5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://otavio-2507.github.io/OtavioDev/)
 [![Código](https://img.shields.io/badge/C%C3%B3digo-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OTAVIO-2507/OtavioDev)
+
+<br>
+
+[![Prévia do projeto](src/img/preview.jpg)](https://otavio-2507.github.io/OtavioDev/)
 
 </div>
 
